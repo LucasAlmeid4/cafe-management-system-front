@@ -5,6 +5,7 @@ WORKDIR /app
 
 # Instala as dependências
 COPY package.json package-lock.json ./
+RUN npm install   # Adiciona esta linha para atualizar o package-lock.json
 RUN npm ci
 
 # Copia os arquivos do projeto
