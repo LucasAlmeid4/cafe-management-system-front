@@ -1,0 +1,26 @@
+# Estágio de construção
+FROM node:18 AS builder
+
+WORKDIR /app
+
+# Instala as dependências
+COPY package.json package-lock.json ./
+RUN npm ci
+
+# Copia os arquivos do projeto
+COPY . .
+
+# Constrói o aplicativo React
+RUN npm run build
+
+# Estágio de produção
+FROM nginx:1.21-alpine
+
+# Copia os arquivos de build do aplicativo React para o diretório do Nginx
+COPY --from=builder /app/build /usr/share/nginx/html
+
+# Expõe a porta 80 para acesso ao aplicativo
+EXPOSE 80
+
+# Inicia o servidor Nginx
+CMD ["nginx", "-g", "daemon off;"]

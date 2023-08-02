@@ -1,0 +1,30 @@
+.lista-container {
+    margin-top: 1rem;
+}
+
+.lista-header {
+    background: #f2f2f2;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.lista-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.lista-table th,
+.lista-table td {
+    border: 1px solid #ccc;
+    padding: 0.5rem;
+}
+
+.lista-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.lista-table tbody tr:hover {
+    background-color: #f9f9f9;
+}

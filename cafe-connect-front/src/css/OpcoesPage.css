@@ -1,0 +1,51 @@
+
+.opcoes-page-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.opcoes-page-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.opcoes-table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.opcoes-table th,
+.opcoes-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+.opcoes-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.opcoes-table td {
+    text-align: center;
+}
+
+.opcoes-table td:first-child {
+    font-weight: bold;
+}
+
+.opcoes-table tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+.opcoes-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.opcoes-table tbody tr:last-child:hover {
+    background-color: transparent;
+}
