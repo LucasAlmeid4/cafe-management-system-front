@@ -1,8 +1,8 @@
 import React from 'react';
-import './GerenciarCadastroPage.css'; // Importe o arquivo de estilos CSS
-import AtualizarUsuario from './AtualizarUsuario'; // Importe o componente AtualizarUsuario
-import ListarUsuarios from './ListarUsuarios'; // Importe o componente ListarUsuarios
-import ExcluirUsuario from './ExcluirUsuario'; // Importe o componente ExcluirUsuario
+import './GerenciarCadastroPage.css';
+import AtualizarUsuario from './AtualizarUsuario';
+import ListarUsuarios from './ListarUsuarios';
+import ExcluirUsuario from './ExcluirUsuario';
 
 const GerenciarCadastroPage = () => {
     return (

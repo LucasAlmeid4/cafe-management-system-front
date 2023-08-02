@@ -7,7 +7,7 @@ const CadastroPage = () => {
 
     const handleSubmit = async (data) => {
         try {
-            const response = await fetch("http://localhost:8080/api/usuarios", {
+            const response = await fetch("https://cafe-system-back-production.up.railway.app/api/usuarios", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

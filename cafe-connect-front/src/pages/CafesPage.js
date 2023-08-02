@@ -11,7 +11,7 @@ const CoffeePage = () => {
 
     const fetchDates = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/datas');
+            const response = await axios.get('https://cafe-system-back-production.up.railway.app/api/datas');
             setDates(response.data);
         } catch (error) {
             console.error('Error fetching dates:', error);

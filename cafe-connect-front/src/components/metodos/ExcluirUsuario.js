@@ -22,7 +22,7 @@ const ExcluirUsuario = () => {
         }
 
         try {
-            const response = await axios.delete(`http://localhost:8080/api/usuarios/${id}`);
+            const response = await axios.delete(`https://cafe-system-back-production.up.railway.app/api/usuarios/${id}`);
             setMensagem('Usuário excluído com sucesso!');
             // Limpa os campos após a exclusão
             setId('');

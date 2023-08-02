@@ -21,7 +21,7 @@ const CadastroParticipanteForm = () => {
 
     const fetchUsuarios = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/usuarios');
+            const response = await fetch('https://cafe-system-back-production.up.railway.app/api/usuarios');
             if (response.ok) {
                 const data = await response.json();
                 setUsuarios(data);
@@ -35,7 +35,7 @@ const CadastroParticipanteForm = () => {
 
     const fetchOpcoes = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/opcoes');
+            const response = await fetch('https://cafe-system-back-production.up.railway.app/api/opcoes');
             if (response.ok) {
                 const data = await response.json();
                 setOpcoes(data);
@@ -49,7 +49,7 @@ const CadastroParticipanteForm = () => {
 
     const fetchDatas = async () => {
         try {
-            const response = await fetch('http://localhost:8080/api/datas');
+            const response = await fetch('https://cafe-system-back-production.up.railway.app/api/datas');
             if (response.ok) {
                 const data = await response.json();
                 setDatas(data);
@@ -75,7 +75,7 @@ const CadastroParticipanteForm = () => {
         console.log('Dados a serem enviados:', participanteData);
 
         try {
-            const response = await fetch('http://localhost:8080/api/participantes', {
+            const response = await fetch('https://cafe-system-back-production.up.railway.app/api/participantes', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

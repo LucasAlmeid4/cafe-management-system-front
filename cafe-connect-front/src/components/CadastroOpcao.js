@@ -11,7 +11,7 @@ const CadastroOpcao = () => {
         const data = { descricao };
 
         try {
-            const response = await fetch("http://localhost:8080/api/opcoes", {
+            const response = await fetch("https://cafe-system-back-production.up.railway.app/api/opcoes", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

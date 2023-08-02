@@ -31,7 +31,7 @@ const ParticipantesPage = () => {
 
         try {
             const formattedDate = convertDate(newDate);
-            const response = await axios.get(`http://localhost:8080/api/lista-de-participantes?data=${formattedDate}`);
+            const response = await axios.get(`https://cafe-system-back-production.up.railway.app/api/lista-de-participantes?data=${formattedDate}`);
             setParticipants(response.data);
         } catch (error) {
             console.error('Error fetching participants:', error);

@@ -11,7 +11,7 @@ const OpcoesPage = () => {
 
     const fetchOpcoes = async () => {
         try {
-            const response = await axios.get('http://localhost:8080/api/opcoes');
+            const response = await axios.get('https://cafe-system-back-production.up.railway.app/api/opcoes');
             setOpcoes(response.data);
         } catch (error) {
             console.error('Error fetching opcoes:', error);

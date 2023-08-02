@@ -23,7 +23,7 @@ const AtualizarUsuario = () => {
         }
 
         try {
-            const response = await axios.put(`http://localhost:8080/api/usuarios/${id}`, {
+            const response = await axios.put(`https://cafe-system-back-production.up.railway.app/api/usuarios/${id}`, {
                 nome,
                 cpf,
             });

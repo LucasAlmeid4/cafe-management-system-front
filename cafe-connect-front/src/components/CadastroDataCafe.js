@@ -9,7 +9,7 @@ const CadastroDataCafe = () => {
         const data = { date };
 
         try {
-            const response = await fetch("http://localhost:8080/api/datas/datas-proximo-coffee", {
+            const response = await fetch("https://cafe-system-back-production.up.railway.app/api/datas/datas-proximo-coffee", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
