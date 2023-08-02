@@ -1,5 +1,5 @@
 # Estágio de construção
-FROM node:14 AS builder
+FROM node:14.17.3 AS builder
 
 WORKDIR /app
 
